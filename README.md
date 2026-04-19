@@ -1,3 +1,7 @@
+# Pterodactyl v1.12.2のリリースファイルを日本語の設定を利用できるようにしています。
+# 本レポジトリデータでいかなる問題が起きても当組織は責任を負いかねます。
+-# 問題があった場合PRやIssuesを出してくれると嬉しいです。
+
 [![Logo Image](https://cdn.pterodactyl.io/logos/new/pterodactyl_logo.png)](https://pterodactyl.io)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/pterodactyl/panel/ci.yaml?label=Tests&style=for-the-badge&branch=1.0-develop)
