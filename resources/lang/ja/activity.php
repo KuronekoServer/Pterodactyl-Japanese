@@ -1,0 +1,125 @@
+<?php
+
+return [
+    'auth' => [
+        'fail' => 'ログイン失敗',
+        'success' => 'ログイン',
+        'password-reset' => 'パスワードをリセット',
+        'reset-password' => 'パスワードのリセットを要求',
+        'checkpoint' => '二要素認証を要求',
+        'recovery-token' => '二要素認証のリカバリートークンを使用',
+        'token' => '二要素認証チャレンジを通過',
+        'ip-blocked' => ':identifier に対する未登録 IP アドレスからのリクエストをブロック',
+        'sftp' => [
+            'fail' => 'SFTP ログイン失敗',
+        ],
+    ],
+    'user' => [
+        'account' => [
+            'email-changed' => 'メールアドレスを :old から :new に変更',
+            'language-changed' => '表示言語を :old から :new に変更',
+            'password-changed' => 'パスワードを変更',
+        ],
+        'api-key' => [
+            'create' => '新しい API キー :identifier を作成',
+            'delete' => 'API キー :identifier を削除',
+        ],
+        'ssh-key' => [
+            'create' => 'SSH キー :fingerprint をアカウントに追加',
+            'delete' => 'SSH キー :fingerprint をアカウントから削除',
+        ],
+        'two-factor' => [
+            'create' => '二要素認証を有効化',
+            'delete' => '二要素認証を無効化',
+        ],
+    ],
+    'server' => [
+        'reinstall' => 'サーバーを再インストール',
+        'console' => [
+            'command' => 'サーバーで ":command" を実行',
+        ],
+        'power' => [
+            'start' => 'サーバーを起動',
+            'stop' => 'サーバーを停止',
+            'restart' => 'サーバーを再起動',
+            'kill' => 'サーバープロセスを強制終了',
+        ],
+        'backup' => [
+            'download' => ':name バックアップをダウンロード',
+            'delete' => ':name バックアップを削除',
+            'restore' => ':name バックアップを復元 (削除されたファイル: :truncate)',
+            'restore-complete' => ':name バックアップの復元を完了',
+            'restore-failed' => ':name バックアップの復元に失敗',
+            'start' => '新しいバックアップ :name を開始',
+            'complete' => ':name バックアップを完了として記録',
+            'fail' => ':name バックアップを失敗として記録',
+            'lock' => ':name バックアップをロック',
+            'unlock' => ':name バックアップのロックを解除',
+        ],
+        'database' => [
+            'create' => '新しいデータベース :name を作成',
+            'rotate-password' => 'データベース :name のパスワードをローテーション',
+            'delete' => 'データベース :name を削除',
+        ],
+        'file' => [
+            'compress_one' => ':directory:file を圧縮',
+            'compress_other' => ':directory 内の :count 件のファイルを圧縮',
+            'read' => ':file の内容を表示',
+            'copy' => ':file のコピーを作成',
+            'create-directory' => 'ディレクトリ :directory:name を作成',
+            'decompress' => ':directory で :files を展開',
+            'delete_one' => ':directory:files.0 を削除',
+            'delete_other' => ':directory 内の :count 件のファイルを削除',
+            'download' => ':file をダウンロード',
+            'pull' => 'リモートファイルを :url から :directory にダウンロード',
+            'rename_one' => ':directory:files.0.from を :directory:files.0.to に名前変更',
+            'rename_other' => ':directory 内の :count 件のファイル名を変更',
+            'write' => ':file に新しい内容を書き込み',
+            'upload' => 'ファイルのアップロードを開始',
+            'uploaded' => ':directory:file をアップロード',
+        ],
+        'sftp' => [
+            'denied' => '権限不足のため SFTP アクセスをブロック',
+            'create_one' => ':files.0 を作成',
+            'create_other' => ':count 件の新しいファイルを作成',
+            'write_one' => ':files.0 の内容を変更',
+            'write_other' => ':count 件のファイルの内容を変更',
+            'delete_one' => ':files.0 を削除',
+            'delete_other' => ':count 件のファイルを削除',
+            'create-directory_one' => 'ディレクトリ :files.0 を作成',
+            'create-directory_other' => ':count 件のディレクトリを作成',
+            'rename_one' => ':files.0.from を :files.0.to に名前変更',
+            'rename_other' => ':count 件のファイルを名前変更または移動',
+        ],
+        'allocation' => [
+            'create' => ':allocation をサーバーに追加',
+            'notes' => ':allocation のメモを ":old" から ":new" に更新',
+            'primary' => ':allocation をサーバーのプライマリ割り当てに設定',
+            'delete' => ':allocation の割り当てを削除',
+        ],
+        'schedule' => [
+            'create' => 'スケジュール :name を作成',
+            'update' => 'スケジュール :name を更新',
+            'execute' => 'スケジュール :name を手動実行',
+            'delete' => 'スケジュール :name を削除',
+        ],
+        'task' => [
+            'create' => 'スケジュール :name に新しい ":action" タスクを作成',
+            'update' => 'スケジュール :name の ":action" タスクを更新',
+            'delete' => 'スケジュール :name のタスクを削除',
+        ],
+        'settings' => [
+            'rename' => 'サーバー名を :old から :new に変更',
+            'description' => 'サーバー説明を :old から :new に変更',
+        ],
+        'startup' => [
+            'edit' => ':variable 変数を ":old" から ":new" に変更',
+            'image' => 'サーバーの Docker Image を :old から :new に更新',
+        ],
+        'subuser' => [
+            'create' => ':email をサブユーザーとして追加',
+            'update' => ':email のサブユーザー権限を更新',
+            'delete' => ':email をサブユーザーから削除',
+        ],
+    ],
+];
